@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ovo je kôd za header sekciju */
+.header{
+    min-height: 15vh;
+    width: 100%;
+    background-color: #F72210;
+    /* margin: 0 auto;
+    display: block; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.datum{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
+
+/* ovo je kôd za navbar */
+nav{
+    display: flex;
+    /* padding: 2% 6%; */
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: white;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 52px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    color: #F72210;
+}
+nav .fa-solid{
+    display: none;
+}
+hr {
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+
+@media(max-width: 850px){
+    
+    .nav-links ul li{
+        display: block;
+        padding: 8px 28px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #23216E;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    /* ovo je za sekciju članci */
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/* ovo je kôd za sekciju članci */
+.article{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+.kategorija{
+    color: #F72210;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+}
+.row{
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-between;
+}
+.article-col{
+    flex-basis: 31%;
+    /* background: #F72210; */
+    margin-bottom: 2%;
+    text-align: left;
+
+    /* padding: 20px; */
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+.article-col img{
+    width: 100%;
+}
+/* .slika{
+    width: 100%;
+} */
+/* .article-title{
+    font-weight: bold;
+} */
+
+h3:hover{
+    text-decoration: underline 2px red;
+}
+.article-col:hover{
+    cursor: pointer;
+}
+.article-col a{
+    all: unset;
+}
+
+.article2{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* ovo je kôd za footer sekciju */
+.footer{
+    width: 100%;
+    text-align: left;
+    padding: 30px 0;
+    margin-top: 0px;
+}
+
+
+
+/* -------------------ovo je kôd za otvoreni članak */
+.glavna-slika{
+    width: 100%;
+}
+h1{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 10px 0px 10px 0px;
+    line-height: 40px;
+}
+.datum-clanak{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.article-body p{
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+/* -------------------ovo je kôd za formu/unos */
+.forma{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.form-item{
+    margin: 3%;
+}
+form .error {
+    color: #ff0000;
+}
+
+.button-green {
+    background-color: #35AF76;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-red {
+    background-color: #F72210;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-yellow {
+    background-color: #E0AD1C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-blue {
+    background-color: #008EF2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
